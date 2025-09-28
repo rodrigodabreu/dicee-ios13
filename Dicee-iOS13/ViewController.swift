@@ -19,10 +19,12 @@ class ViewController: UIViewController {
 		
 //	who.what = value
 		diceImageView1.image = UIImage(named: "DiceSix")
-		diceImageView1.alpha = 0.5
-		
 		diceImageView2.image = UIImage(named: "DiceTwo")
-		diceImageView2.alpha = 0.5
 		
+	}
+//	Interface Build Action = IBAction
+	@IBAction func rollButtonPressed(_ sender: UIButton) {
+		diceImageView1.image = UIImage(named: "DiceFour")
+		diceImageView2.image = UIImage(named: "DiceFour")
 	}
 }
