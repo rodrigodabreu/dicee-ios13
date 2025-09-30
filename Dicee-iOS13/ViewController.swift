@@ -28,18 +28,10 @@ class ViewController: UIViewController {
 		UIImage(named: "DiceSix")
 	]
 	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		
-//	who.what = value
-		diceImageView1.image = UIImage(named: "DiceSix")
-		diceImageView2.image = UIImage(named: "DiceTwo")
-		
-	}
 //	Interface Build Action = IBAction
 	@IBAction func rollButtonPressed(_ sender: UIButton) {
 		
-		diceImageView1.image = diceFaces.randomElement()!!
-		diceImageView2.image = diceFaces.randomElement()!!
+		diceImageView1.image = diceFaces[Int.random(in:0...5)]
+		diceImageView2.image = diceFaces[Int.random(in:0...5)]
 	}
 }
