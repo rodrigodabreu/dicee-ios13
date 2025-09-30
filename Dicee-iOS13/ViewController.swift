@@ -19,14 +19,15 @@ class ViewController: UIViewController {
 	@IBOutlet weak var diceImageView2: UIImageView!
 	
 	
-	let diceFaces = [
-		UIImage(named: "DiceOne"),
-		UIImage(named: "DiceTwo"),
-		UIImage(named: "DiceThree"),
-		UIImage(named: "DiceFour"),
-		UIImage(named: "DiceFive"),
-		UIImage(named: "DiceSix")
-	]
+//	let diceFaces = [
+//		UIImage(named: "DiceOne"),
+//		UIImage(named: "DiceTwo"),
+//		UIImage(named: "DiceThree"),
+//		UIImage(named: "DiceFour"),
+//		UIImage(named: "DiceFive"),
+//		UIImage(named: "DiceSix")
+//	]
+	let diceFaces = [#imageLiteral(resourceName: "DiceOne"),#imageLiteral(resourceName: "DiceTwo"),#imageLiteral(resourceName: "DiceThree"),#imageLiteral(resourceName: "DiceFour"),#imageLiteral(resourceName: "DiceFive"),#imageLiteral(resourceName: "DiceSix")]
 	
 //	Interface Build Action = IBAction
 	@IBAction func rollButtonPressed(_ sender: UIButton) {
